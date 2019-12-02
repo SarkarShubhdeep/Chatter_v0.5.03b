@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/bg_login">
+
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/register_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"/>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="201dp"
+        android:fontFamily="@font/medium"
+        android:text="hello\nthere!"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="60sp"
+        android:lineHeight="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/create_new_acc"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:id="@+id/create_new_acc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/regular"
+        android:text="Create a new account."
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        tools:text="Create a new account."
+        android:layout_alignBottom="@+id/reg_display_name"
+        android:layout_marginBottom="70dp"/>
+
+    <EditText
+        android:id="@+id/reg_display_name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_bglight"
+        android:fontFamily="@font/regular"
+        android:hint="@string/display_name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColorHint="@color/colorLight"
+        android:textColor="@color/colorDarkGrey"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/reg_email"
+        android:layout_marginBottom="60dp" />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_bglight"
+        android:fontFamily="@font/regular"
+        android:hint="@string/email"
+        android:inputType="textPersonName|textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColorHint="@color/colorLight"
+        android:textColor="@color/colorDarkGrey"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/reg_password"
+        android:layout_marginBottom="60dp"/>
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_bglight"
+        android:fontFamily="@font/regular"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColorHint="@color/colorLight"
+        android:textColor="@color/colorDarkGrey"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/reg_create_btn"
+        android:layout_marginBottom="70dp" />
+
+
+    <Button
+        android:id="@+id/reg_create_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_bg_blue"
+        android:fontFamily="@font/medium"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLight"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp" />
+
+</RelativeLayout>

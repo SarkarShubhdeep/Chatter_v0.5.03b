@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:background="@drawable/enter_screen_2">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/logo_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="CHATTER"
+        android:textColor="@color/colorLight"
+        android:fontFamily="@font/lato_black"
+        android:textSize="30dp"
+        android:layout_marginTop="160dp"/>
+    <Button
+        android:id="@+id/start_login_btn"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/layout_grey"
+        android:fontFamily="@font/medium"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLight"
+        android:textSize="20sp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="85dp"/>
+
+    <Button
+        android:id="@+id/start_reg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg_transparent"
+        android:text="New User? Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLight"
+        android:textSize="16sp"
+
+        android:fontFamily="@font/medium"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"/>
+
+</RelativeLayout>

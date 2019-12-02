@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Chatter_v0.5a</string>
+    <string name="create_new_account">Create new Account</string>
+    <string name="display_name">Display Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="log_out">Log Out</string>
+    <string name="sign_in">Sign In</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="your_status">Your Status</string>
+    <string name="default_notification_channel_id">CHANNEL_1_ID</string>
+    <string name="default_notification_channel_name">channel1</string>
+</resources>

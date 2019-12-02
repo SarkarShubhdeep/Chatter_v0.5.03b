@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDullLight"
+    tools:context=".ProfileActivity">
+
+
+    <TextView
+        android:id="@+id/profile_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/profile_image"
+        android:layout_marginBottom="-70dp"
+
+        android:text="@string/display_name"
+        android:fontFamily="@font/medium"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/default_profile_full" />
+
+    <TextView
+        android:id="@+id/profile_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:text="Hi there, I'm using Chatter app"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/profile_display_name"
+        android:layout_marginTop="45dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/profile_status"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/profile_totalFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Friends"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_totalFriends"
+            android:layout_marginLeft="10dp"
+            android:text="Friends"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/profile_send_req_btn"
+        android:layout_width="wrap_content"
+        android:minWidth="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_bg_blue"
+        android:fontFamily="@font/medium"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Add Friend"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLight"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignBottom="@id/profile_decline_btn" />
+
+    <Button
+        android:id="@+id/profile_decline_btn"
+        android:layout_width="wrap_content"
+        android:minWidth="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_grey"
+        android:fontFamily="@font/medium"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLight"
+        android:textSize="20sp"
+        android:text="Decline"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp" />
+
+
+</RelativeLayout>
+
+
+<!--<TextView-->
+<!--android:id="@+id/textView"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_above="@+id/profile_totalFriends"-->
+<!--android:layout_centerInParent="true"-->
+<!--android:layout_marginBottom="20dp"-->
+<!--android:gravity="center_horizontal"-->
+<!--android:text="Friends"-->
+<!--android:textColor="#FFFFFF"-->
+<!--android:textSize="22sp"-->
+<!--android:textStyle="normal|bold" />-->

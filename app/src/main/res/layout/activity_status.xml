@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_status"
+    tools:context=".StatusActivity">
+
+    <include
+        android:id="@+id/status_appBar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"/>
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/status_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/medium"
+        android:lineHeight="50sp"
+        android:text="edit your\nstatus"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/status_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:textColorHint="@color/colorLight"
+
+
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/layout_bglight"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:hint="@string/your_status"
+
+        android:layout_alignBottom="@+id/status_save_btn"
+        android:textColor="@color/colorDarkGrey"
+        android:layout_marginBottom="70dp"/>
+
+    <Button
+        android:id="@+id/status_save_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_bg_blue"
+        android:fontFamily="@font/medium"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLight"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
+

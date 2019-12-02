@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_bar_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/default_profile_circle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/custom_bar_image"
+        android:layout_marginRight="60dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/custom_bar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAlignment="textEnd"
+
+            android:text="@string/display_name"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/custom_bar_seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custom_bar_title"
+            android:layout_alignRight="@id/custom_bar_title"
+            android:layout_marginTop="0dp"
+            android:text="Last seen"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
+
+
+<!--<RelativeLayout-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_centerVertical="true"-->
+<!--android:layout_alignRight="@+id/custom_bar_image"-->
+<!--android:layout_marginRight="60dp">-->
+
+<!--<TextView-->
+<!--    android:id="@+id/custom_bar_title"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+
+<!--    android:text="@string/display_name"-->
+<!--    android:textStyle="normal|bold"-->
+<!--    android:textColor="@color/colorDarkGrey"-->
+<!--    android:textSize="20dp" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/custom_bar_seen"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_below="@+id/custom_bar_title"-->
+<!--    android:layout_alignRight="@id/custom_bar_title"-->
+<!--    android:layout_marginTop="0dp"-->
+<!--    android:text="Last seen"-->
+<!--    android:textColor="@color/colorDarkGrey"-->
+<!--    android:textSize="12sp" />-->
+
+<!--</RelativeLayout>-->
